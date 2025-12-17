@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+     .content{
+            width: 100%;
+            position: absolute;
+            color: #87ceeb;
+            top: 45%;
+            transform: translateY(-50%);
+            text-align: center;
+        }
+        .content h1{
+            margin-top: 80px;
+            font-size: 250px;
+            font-weight: 800;
+            text-shadow: 20px gold;
+        }
+    .banner video{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+        }
+        @media(min-aspect-ratio: 16/9){
+            .banner video{
+              width: 100%;
+              height: auto;
+              background-size: cover;
+            }
+        }
+  </style>
+</head>
+<body>
+    <div class="banner">
+        <video autoplay loop muted plays-inline>
+            <source src="../tangub.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <h1>It's a Prank</h1>
+</body>
+</html>

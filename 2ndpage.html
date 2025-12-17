@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Personal Reflection</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(boak.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+        width: 90%;
+        max-width: 1100px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #f90909;
+        font-size: 3rem;
+        margin-bottom: 40px;
+        letter-spacing: 2px;
+    }
+
+    .box-wrapper {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box {
+        width: 400px;
+        min-height: 220px;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 25px;
+        color: #ffffff;
+        box-shadow: 0 10px 50px rgba(255, 5, 5, 0.4), 0 6px 6px rgba(255, 255, 255, 0.3);
+        transition: transform 0.4s ease, background 0.4s ease, box-shadow 0.8s ease;
+    }
+
+    .box:hover {
+        transform: translateY(-15px) scale(1.05);
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 50px 145px rgba(124, 255, 24, 0.5), 0 15px 20px rgba(0,0,0,0.3);
+    }
+
+    .box h2 {
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+    }
+
+    .box p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        opacity: 0.9;
+    }
+
+    @media (max-width: 900px) {
+        h1 {
+            font-size: 2.2rem;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Personal Reflection</h1>
+
+    <div class="box-wrapper">
+        <div class="box">
+            <h2>Faith</h2>
+            <p>
+                Faith is a strong belief or trust in something or someone, especially without needing proof.
+                It often refers to trust in God, beliefs, or confidence in people and values
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>Integrity</h2>
+            <p>
+                Integrity is the quality of being honest and having strong moral principles.
+                It means doing the right thing even when no one is watching.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>Responsible Digital Citizenship</h2>
+            <p>
+                Responsible digital citizenship is the proper, ethical, and safe use of technology and the internet.
+                It includes respecting others online, protecting personal information, following rules, and using digital tools responsibly.
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: century;
+}
+
+header{
+    height: 100vh;
+    background-image: url(what.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 80px;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px;
+    font-size: 17px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color:#fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: 0.5 ease;
+}
+
+ul li a:hover{
+    background-color: #000;
+    color:#ffd700;
+    transition: 0.5s;
+}
+
+ul li.active a{
+    background-color: #fff;
+    color:#fff;
+}
+
+.logo img{
+    margin-right:auto;
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.main{
+    display: flex;
+  max-width: 1200px;
+  margin:auto;
+    
+}
+.banner video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+.content{
+    width: 100%;
+    position: absolute;
+    color:black;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+    .content h1{
+    margin-top: 80px;
+    font-size: 90px;
+    font-weight: 800;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    margin: 20px 5px;
+    text-align: center;
+    border-radius: 25px;
+    color: black;
+    border: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+button:hover{
+    background: gold;
+    transition: 0.5s;
+}
+button:hover{
+    color: white;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Inspirational Portfolio Page</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        background-image: url(../final_website/class.jpg);
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        letter-spacing: 3px;
+        text-shadow: 0 0 50px rgba(255,255,255,0.7);
+    }
+
+    .subtitle {
+        max-width: 700px;
+        margin: 0 auto 50px;
+        font-size: 1.05rem;
+        opacity: 0.9;
+    }
+
+    .box-wrapper {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box {
+        position: relative;
+        width: 320px;
+        height: 400px;
+        border-radius: 22px;
+        overflow: hidden;
+        box-shadow:
+            0 15px 35px rgba(0,0,0,0.6),
+            0 0 25px rgba(255,255,255,0.2);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .box::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        transition:  0.4s ease;
+    }
+
+    .box:hover::before {
+        background: rgba(0,0,0,0.35);
+    }
+
+    .box:hover {
+        transform: translateY(-15px) scale(1.05);
+        box-shadow:
+            0 25px 55px rgba(0,0,0,0.8),
+            0 0 40px rgba(255,255,255,0.6);
+    }
+
+    .content {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content h2 {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+        text-shadow: 0 0 10px rgba(255,255,255,0.7);
+    }
+
+    .content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        opacity: 0.95;
+        color: #fff;
+    }
+
+    .work {
+        background: url("../final_website/reserch.jpg") center/cover;
+    }
+
+    .goals {
+        background: url("../final_website/i\ am.jpg") center/cover;
+    }
+
+    .values {
+        background: url("../final_website/christmas.jpg") center/cover;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.3rem;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Light of the World</h1>
+    <p class="subtitle">
+        My inspirational portfolio highlighting my work, goals, and guiding values
+        reflecting purpose, faith, and the light that leads my journey.
+    </p>
+
+    <div class="box-wrapper">
+
+        <div class="box work">
+            <div class="content">
+                <h2>My Work</h2>
+                <p>
+                    My work reflects creativity, dedication, and continuous growth,
+                    aiming to contribute positively and inspire others through my action.
+                </p>
+            </div>
+        </div>
+
+        <div class="box goals">
+            <div class="content">
+                <h2>My Goals</h2>
+                <p>
+                    My goals is to grow in knowledge, character, and becoming a succesful someday
+                    that motivates and guides those around me.
+                </p>
+            </div>
+        </div>
+
+        <div class="box values">
+            <div class="content">
+                <h2>My Values</h2>
+                <p>
+                    Guided by respect, compassion, and love, I aim to live with
+                    purpose and bring happy into my family and friends.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

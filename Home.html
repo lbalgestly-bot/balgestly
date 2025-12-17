@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background-size: center;
+        }
+        .navbar{
+            width: 90%;
+            padding: 30px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 160px;
+            margin-left: -30px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 20px;
+            margin-right: 20px;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 600;
+            padding: 15px;
+        }
+        li a:hover{
+            background: yellow  ;
+            transition: 0.5s;
+            color: #fff
+        }
+        .navbar a:hover{
+            color: #fff;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            color: white;
+            top: 45%;
+            transform: translateY(-50%);
+            text-align: center;
+        }
+        .content h1{
+            margin-top: 80px;
+            font-size: 90px;
+            font-weight: 800;
+        }
+        button{
+            width: 200px;
+            padding: 15px;
+            margin: 20px 5px;
+            text-align: center;
+            border-radius: 25px;
+            color: black;
+            border: 2px;
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        button:hover{
+            background: rgba(0, 155, 226);
+            transition: 0.5s;
+        }
+        button:hover{
+            color: white;
+        }
+        .banner video{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        @media(min-aspect-ratio: 16/9){
+            .banner video{
+                width: 100%;
+                height: auto;
+                background-size: cover;
+            }
+        }
+        header ul li{
+            height: 100vh;
+            top: auto;
+            display: flex;
+           text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <video autoplay loop muted plays-inline>
+            <source src="../city.mp4" type="video/mp4">
+        </video>
+        <div class="navbar">
+            <img class="logo" src="../final_website/ME.jpg"> 
+        </div>
+        <header>
+            <ul>
+                <li>
+                    <h3>
+                    I am Bal Gestly P. Labador from the Institute of Computer Studies,I am passionate about respect 
+                    because it helps build stronger relationships, reduces misunderstandings, and brings people closer together.
+                    Even when we disagree, respect allows us to communicate peacefully and learn from one another.
+                    </h3>
+                </li>
+            </ul>
+        </header>
+        <div class="content">
+            <h1>BAL GESTLY P. LABADOR</h1>
+            <div type="button">
+                <a href="index.html"><button type="button">previous</button></a>
+            </div>
+
+    </div>
+</body>
+</html>

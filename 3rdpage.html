@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery with Transitions</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background-image: url('../final_website/ics.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .page-title {
+      color: #ffffff;
+      font-size: 42px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+      text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+      letter-spacing: 1px;
+    }
+
+    .page-paragraph {
+      margin-top: 50px;
+      max-width: 900px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 1.8;
+      text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 0 50px rgba(255,255,255,0.6);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease, filter 0.6s ease;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .card .text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: #fff;
+      z-index: 2;
+      transform: translateY(30px);
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+
+    .card .text h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .card .text p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+    }
+
+    .card:hover img {
+      transform: scale(1.15);
+      filter: brightness(0.8);
+    }
+
+    .card:hover::after {
+      opacity: 1;
+    }
+
+    .card:hover .text {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-title">Community Service and Advocacy Page</div>
+
+  <div class="gallery">
+    <div class="card">
+      <img src="gen1.jpg" alt="gen1" />
+      <div class="text">
+        <h3>1st morning of General Cleaning</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="gen2.jpg" alt="gen2" />
+      <div class="text">
+        <h3>1st afternoon of General Cleaning</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="gen3.jpg" alt="gen3" />
+      <div class="text">
+        <h3>2nd morning of General Cleaning</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="gen4.jpg" alt="gen4" />
+      <div class="text">
+        <h3>2nd afternoon of General Ceaning</h3>
+      </div>
+    </div>
+
+    <div class="card">
+        <img src="ako.jpg" alt="ako">
+      <div class="text">
+        <h3>Campus Kickoff</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="focus.jpg" alt="focus">
+      <div class="text">
+        <h3>Sinag day</h3>
+      </div>
+    </div>
+      <div class="card">
+      <img src="itom.jpg" alt="itom">
+      <div class="text">
+        <h3>Alcucoa Accreditators</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="ics2.jpg" alt="ics2">
+      <div class="text">
+        <h3>General Assembly</h3>
+      </div>
+    </div>
+    </div>
+
+  <div class="page-paragraph">
+   We live in a world where many people face stress, pain, and sadness. In these moments, light becomes a powerful symbol of hope and love. Jesus Christ is called the Light of the World because He shows us the way to truth, love, and goodness. His teachings guide us to choose what is right, even when the path seems dark.
+   Being touched by the Light of the World also means sharing that light with others. Through kindness, forgiveness, compassion, and also respect we can reflect His light in our daily lives. When we choose to help, to understand, and to love, we bring hope to those around us. In this way, the Light of the World continues to shine, reminding us that darkness can never overcome light.
